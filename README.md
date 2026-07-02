@@ -10,6 +10,7 @@
 - 拖动时按住 `Shift` 可临时跳过吸附。
 - 可在设置中调整吸附距离。
 - 分组显示更清晰的标题栏、边框、高亮和选中效果。
+- 图片文件菜单悬停时显示输入图片预览，可在 `MK 主题 > 图片预览` 中开关。
 - 打开 ComfyUI 后显示可拖动的 `MK` 悬浮图标。
 - 悬浮工具栏支持复制/粘贴节点大小。
 - 悬浮工具栏支持复制/粘贴节点颜色。
@@ -44,6 +45,7 @@ ComfyUI/custom_nodes/Comfyui-MK-Theme
 - `js/align/index.js`：MK-Theme 对齐参考线和吸附功能。
 - `js/floating_icon.js`：MK 悬浮工具栏功能。
 - `js/linear_theme.js`：独立集成的 Group-Styler 分组美化功能。
+- `js/preview_image_hover.js`：图片文件菜单悬停预览功能。
 - `js/assets/icons/ui/align-center-v.svg`：对齐工具栏图标。
 - `config.json`：Group-Styler 保留配置资产。
 - `linear_dark.json`：Group-Styler 保留主题资产。
