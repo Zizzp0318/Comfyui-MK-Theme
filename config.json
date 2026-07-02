@@ -1,0 +1,43 @@
+{
+  "canvas": {
+    "backgroundColor": "#0d0d0d",
+    "dotGridOpacity": 0,
+    "nodeBorderRadius": 11,
+    "connectionWidth": 1.5,
+    "linkColor": "#52525b",
+    "groupColor": "#2a2a2e",
+    "fpsBoost": true,
+    "snapGuides": true
+  },
+  "nodes": {
+    "bodyColor": "#1a1a1a",
+    "titleColor": "#1a1a1a",
+    "shadowOpacity": 0,
+    "boxIndicatorColor": "#ffffff",
+    "outlineColor": "#ffffff",
+    "outlineTransparent": true,
+    "titleTextColor": "#ffffff",
+    "widgetBackground": "#1a1a1a"
+  },
+  "slots": {
+    "CLIP": "#FACC15",
+    "CONDITIONING": "#FB923C",
+    "IMAGE": "#60A5FA",
+    "LATENT": "#F0ABFC",
+    "MASK": "#4ADE80",
+    "MODEL": "#A78BFA",
+    "VAE": "#F87171",
+    "CONTROL_NET": "#34D399"
+  },
+  "ui": {
+    "barsBackground": "#1a1a1a",
+    "surface": "#1a1a1a",
+    "surfaceElevated": "#121212",
+    "border": "#1e1e22",
+    "textPrimary": "#ffffff",
+    "textSecondary": "#b0b0b0",
+    "textMuted": "#71717a",
+    "accent": "#ffffff",
+    "accentSecondary": "#ffffff"
+  }
+}

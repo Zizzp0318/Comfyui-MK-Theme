@@ -1,0 +1,13 @@
+[project]
+name = "Comfyui-MK-Theme"
+description = "ComfyUI MK Theme: canvas alignment, group styling, and floating node tools."
+version = "0.1.0"
+license = { text = "MIT" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/Zizzp0318/Comfyui-MK-Theme"
+
+[tool.comfy]
+PublisherId = "mk"
+DisplayName = "MK Theme"
