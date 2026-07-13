@@ -87,7 +87,7 @@ function hidePreview() {
 }
 
 function cleanupCache() {
-  if (imageCache.size > CACHE_MAX_SIZE) {
+  if (imageCache.size >= CACHE_MAX_SIZE) {
     const firstKey = imageCache.keys().next().value;
     imageCache.delete(firstKey);
   }

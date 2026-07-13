@@ -85,7 +85,7 @@ function _hitTestGroup(canvas, event) {
 }
 
 function installMouseHook() {
-    const canvas = app?.canvas;
+    const canvas = comfyApp?.canvas;
     if (!canvas) return false;
     if (canvas.__groupStylerMouseHooked) return true;
 
@@ -112,6 +112,7 @@ function installMouseHook() {
 }
 
 function installGroupOverride() {
+    if (!window.LGraphCanvas) return;
     if (!LGraphCanvas.prototype._origDrawGroups) {
         LGraphCanvas.prototype._origDrawGroups = LGraphCanvas.prototype.drawGroups;
     }

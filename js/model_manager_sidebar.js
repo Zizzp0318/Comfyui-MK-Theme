@@ -710,13 +710,17 @@ function previewImageSrc(model) {
   return typeof api.apiURL === "function" ? api.apiURL(model.preview_url) : model.preview_url;
 }
 
-function zoomRoot() {
-  let root = document.querySelector(".mk-model-manager-zoom");
-  if (root) return root;
+let _zoomRootEl = null;
 
-  root = createElement("div", "mk-model-manager-zoom");
-  root.appendChild(document.createElement("img"));
-  document.body.appendChild(root);
+function zoomRoot() {
+  if (_zoomRootEl) return _zoomRootEl;
+  let root = document.querySelector(".mk-model-manager-zoom");
+  if (!root) {
+    root = createElement("div", "mk-model-manager-zoom");
+    root.appendChild(document.createElement("img"));
+    document.body.appendChild(root);
+  }
+  _zoomRootEl = root;
   return root;
 }
 

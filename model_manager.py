@@ -390,7 +390,8 @@ def _list_models():
 
 
 async def _models_route(_request):
-    return web.json_response({"models": _list_models()})
+    models = await asyncio.to_thread(_list_models)
+    return web.json_response({"models": models})
 
 
 async def _preview_route(request):
